@@ -29,7 +29,7 @@ export function Header() {
                 em <i>Criminal</i>
               </Text>
               <Text
-                as={'h3'}
+                as="p"
                 color={'whiteAlpha.800'}
                 fontWeight="semibold"
                 fontSize={['lg', '2xl', '3xl']}

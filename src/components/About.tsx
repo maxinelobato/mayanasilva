@@ -85,7 +85,7 @@ export function About() {
               alt={'Login Image'}
               objectFit={'cover'}
               boxSize="lg"
-              src={'/img/may.png'}
+              src={'/img/may.webp'}
             />
           </Flex>
         </Stack>
