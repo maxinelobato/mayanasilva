@@ -27,14 +27,14 @@ function StatsCard(props: StatsCardProps) {
   return (
     <Stat
       px={{ base: 2, md: 4 }}
-      py={'5'}
+      py={5}
       backdropFilter="auto"
       backdropBlur="1rem"
       bgColor="whiteAlpha.50"
-      shadow={'xl'}
-      border={'1px solid'}
+      shadow="xl"
+      border="1px solid"
       borderColor="whiteAlpha.200"
-      rounded={'lg'}
+      rounded="lg"
     >
       <Flex
         justifyContent={{ base: 'center', md: 'center' }}

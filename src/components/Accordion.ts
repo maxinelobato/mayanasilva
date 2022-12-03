@@ -11,19 +11,19 @@ const baseStyle = definePartsStyle({
     boxShadow: 'lg',
     _focus: {
       boxShadow: 'outline',
+      rounded: 'lg',
     },
   }),
 });
 
 // Defining a custom variant called outline
-const outline = definePartsStyle((props) => {
-  const { colorScheme: c } = props;
+const outline = definePartsStyle(() => {
   return {
     container: {
       backdropFilter: 'auto',
       backdropBlur: '1rem',
       bgColor: 'whiteAlpha.50',
-      shadow: 'xl',
+      shadow: 'lg',
       rounded: 'lg',
     },
     button: {

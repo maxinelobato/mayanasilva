@@ -14,14 +14,10 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
-
-import {
-  FcIdea,
-  FcInspection,
-  FcSettings,
-  FcCheckmark,
-  FcConferenceCall,
-} from 'react-icons/fc';
+import { FaPenSquare, FaShieldAlt } from 'react-icons/fa';
+import { FcCheckmark } from 'react-icons/fc';
+import { IoIosPeople } from 'react-icons/io';
+import { IoBusiness } from 'react-icons/io5';
 import { ButtonCta } from './ButtonCta';
 interface FeatureProps {
   text: string;
@@ -61,17 +57,15 @@ export function Specialty() {
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 1 }} spacing={{ base: 1, lg: 6 }}>
             <Box position="relative">
-              <Accordion variant="outline" allowToggle={true} reduceMotion={true}>
+              <Accordion reduceMotion={true} defaultIndex={[0]} allowMultiple>
                 <AccordionItem mt={4}>
                   <h2>
-                    <AccordionButton
-                      _expanded={{ bg: 'brandblue.400', color: 'brandbeige.200' }}
-                    >
+                    <AccordionButton>
                       <Box flex="1" textAlign="center">
                         <Stack spacing={2}>
                           <Feature
-                            icon={<Icon as={FcIdea} w={16} h={16} />}
-                            text={'Ideação: Viabilidade Jurídica da Ideia'}
+                            icon={<Icon as={IoIosPeople} w={16} h={16} />}
+                            text={'Acompanhamento em Delegacia'}
                           />
                         </Stack>
                       </Box>
@@ -81,27 +75,24 @@ export function Specialty() {
                   <AccordionPanel pb={4}>
                     <Box>
                       <Text pt="1" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> A ideia é lícita?
+                        <Icon as={FcCheckmark} /> A ideia é lícita?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Existe alguma lei
-                        que a define?
+                        <Icon as={FcCheckmark} /> Existe alguma lei que a define?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Existe alguma lei
-                        que a proíbe?
+                        <Icon as={FcCheckmark} /> Existe alguma lei que a proíbe?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Esse tipo de negócio
-                        é regulamentado?
+                        <Icon as={FcCheckmark} /> Esse tipo de negócio é regulamentado?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Existe a obrigação
-                        de ter alguma certificação ou registro em algum órgão?
+                        <Icon as={FcCheckmark} /> Existe a obrigação de ter alguma
+                        certificação ou registro em algum órgão?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Consigo desenvolver
-                        a regulamentação junto ao legislativo?
+                        <Icon as={FcCheckmark} /> Consigo desenvolver a regulamentação
+                        junto ao legislativo?
                       </Text>
                     </Box>
                     <Box>
@@ -109,12 +100,10 @@ export function Specialty() {
                         serviços:
                       </Heading>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Pesquisa de
-                        viabilidade jurídica
+                        <Icon as={FcCheckmark} /> Pesquisa de viabilidade jurídica
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Viabilidade de
-                        construção legislativa
+                        <Icon as={FcCheckmark} /> Viabilidade de construção legislativa
                       </Text>
                     </Box>
                   </AccordionPanel>
@@ -122,14 +111,12 @@ export function Specialty() {
 
                 <AccordionItem mt={4}>
                   <h2>
-                    <AccordionButton
-                      _expanded={{ bg: 'brandblue.400', color: 'brandbeige.200' }}
-                    >
+                    <AccordionButton>
                       <Box flex="1" textAlign="center">
                         <Stack spacing={2}>
                           <Feature
-                            icon={<Icon as={FcConferenceCall} w={16} h={16} />}
-                            text={'Formação: Ainda não é a hora de registrar a empresa'}
+                            icon={<Icon as={IoBusiness} w={16} h={16} />}
+                            text={'Atuação em Tribunais'}
                           />
                         </Stack>
                       </Box>
@@ -139,15 +126,14 @@ export function Specialty() {
                   <AccordionPanel pb={4}>
                     <Box>
                       <Text pt="1" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Vai empreender
-                        sozinho?
+                        <Icon as={FcCheckmark} /> Vai empreender sozinho?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Vai ter sócios?
+                        <Icon as={FcCheckmark} /> Vai ter sócios?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Qual o time ideal
-                        para colocar a ideia em prática?
+                        <Icon as={FcCheckmark} /> Qual o time ideal para colocar a ideia
+                        em prática?
                       </Text>
                     </Box>
                     <Box>
@@ -155,8 +141,8 @@ export function Specialty() {
                         serviços:
                       </Heading>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'#330519'} /> Elaboração de um MoU
-                        (memorando de entendimentos entre sócios)
+                        <Icon as={FcCheckmark} /> Elaboração de um MoU (memorando de
+                        entendimentos entre sócios)
                       </Text>
                     </Box>
                   </AccordionPanel>
@@ -164,16 +150,12 @@ export function Specialty() {
 
                 <AccordionItem mt={4}>
                   <h2>
-                    <AccordionButton
-                      _expanded={{ bg: 'brandblue.400', color: 'brandbeige.200' }}
-                    >
+                    <AccordionButton>
                       <Box flex="1" textAlign="center">
                         <Stack spacing={2}>
                           <Feature
-                            icon={<Icon as={FcSettings} w={16} h={16} />}
-                            text={
-                              'Criação/Tração: O negócio já possui viabilidade jurídica, o empreendedor coloca a mão na massa para resolver uma dor do mercado '
-                            }
+                            icon={<Icon as={FaShieldAlt} w={16} h={16} />}
+                            text={'Defesa em Processos Criminais'}
                           />
                         </Stack>
                       </Box>
@@ -183,9 +165,8 @@ export function Specialty() {
                   <AccordionPanel pb={4}>
                     <Box>
                       <Text pt="1" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Como
-                        contratar desenvolvedores, programadores, designers e outros
-                        prestadores de serviços?
+                        <Icon as={FcCheckmark} /> Como contratar desenvolvedores,
+                        programadores, designers e outros prestadores de serviços?
                       </Text>
                     </Box>
                     <Box>
@@ -193,25 +174,23 @@ export function Specialty() {
                         serviços:
                       </Heading>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Contratos
-                        com terceiros
+                        <Icon as={FcCheckmark} /> Contratos com terceiros
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Contratos de
-                        vesting
+                        <Icon as={FcCheckmark} /> Contratos de vesting
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Formalizar
-                        cessão dos direitos autorais de software
+                        <Icon as={FcCheckmark} /> Formalizar cessão dos direitos
+                        autorais de software
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Como falar
-                        do projeto para essas e outras pessoas (como investidores) sem
-                        que a ideia seja divulgada?
+                        <Icon as={FcCheckmark} /> Como falar do projeto para essas e
+                        outras pessoas (como investidores) sem que a ideia seja
+                        divulgada?
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Termos ou
-                        cláusulas de confidencialidade
+                        <Icon as={FcCheckmark} /> Termos ou cláusulas de
+                        confidencialidade
                       </Text>
                     </Box>
                   </AccordionPanel>
@@ -219,16 +198,12 @@ export function Specialty() {
 
                 <AccordionItem mt={4}>
                   <h2>
-                    <AccordionButton
-                      _expanded={{ bg: 'brandblue.400', color: 'brandbeige.200' }}
-                    >
+                    <AccordionButton>
                       <Box flex="1" textAlign="center">
                         <Stack spacing={2}>
                           <Feature
-                            icon={<Icon as={FcInspection} w={16} h={16} />}
-                            text={
-                              'Validação: Testes moderados do MVP (Produto Mínimo Viável) no mercado'
-                            }
+                            icon={<Icon as={FaPenSquare} w={16} h={16} />}
+                            text={'Execução Penal'}
                           />
                         </Stack>
                       </Box>
@@ -241,16 +216,14 @@ export function Specialty() {
                         serviços:
                       </Heading>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Formalizar a
-                        empresa (tipo societário e regime de tributação)
+                        <Icon as={FcCheckmark} /> Formalizar a empresa (tipo societário
+                        e regime de tributação)
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Busca prévia
-                        INPI
+                        <Icon as={FcCheckmark} /> Busca prévia INPI
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} color={'brandorange.500'} /> Registrar
-                        marca/patente
+                        <Icon as={FcCheckmark} /> Registrar marca/patente
                       </Text>
                     </Box>
                   </AccordionPanel>
