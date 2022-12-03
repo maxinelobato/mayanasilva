@@ -1,11 +1,4 @@
-import {
-  Icon,
-  IconButton,
-  Link,
-  Stack,
-  Tooltip,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Icon, IconButton, Link, Stack, Tooltip } from '@chakra-ui/react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 export function ScrollCtaWhatsapp() {
