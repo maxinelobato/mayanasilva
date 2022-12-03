@@ -1,4 +1,4 @@
-import { Box, Container, HStack, Image } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 
 export function LogoCopa() {
   return (
