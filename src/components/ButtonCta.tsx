@@ -12,6 +12,7 @@ export function ButtonCta() {
         backdropBlur="8px"
         shadow="lg"
         size="lg"
+        rounded={'full'}
         _hover={{
           bgColor: 'red.100',
           transform: 'scale(1.1)',

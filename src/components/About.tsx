@@ -5,6 +5,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -36,12 +37,10 @@ export function About() {
                 </Text>{' '}
               </Heading>
               <Text fontSize={{ base: 'md', lg: 'lg' }} color={'whiteAlpha.700'}>
-                O escritório MS ADVOCACIA E ASSESSORIA JURÍDICA atua na defesa dos
-                contribuintes pessoa jurídica ou pessoa física na execuções fiscais
-                promovidas pelos Municípios, Estados e pela União (tributos federais).
-                No campo em que atua, temos vasta experiência prática, conhecimento e
-                dedicação aos clientes, para que seus direitos sejam encaminhados com
-                adequação aquilo que se busca.
+                O escritório MS ADVOCACIA E ASSESSORIA JURÍDICA atua em toda a Região do
+                Maranhão. Somos especialistas em Direito Penal se traduz no servir
+                através de uma Advocacia Criminal Humanizada, discreta e ágil na defesa
+                dos interesses de seus clientes.
               </Text>
               <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                 <Button
@@ -59,7 +58,15 @@ export function About() {
                 </Button>
                 <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
                   <ModalOverlay />
-                  <ModalContent>
+                  <ModalContent
+                    backdropFilter="auto"
+                    backdropBlur="1rem"
+                    bgColor="whiteAlpha.50"
+                    shadow="xl"
+                    border="1px solid"
+                    borderColor="whiteAlpha.200"
+                    rounded="lg"
+                  >
                     <ModalHeader>Modal Title</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
@@ -68,10 +75,24 @@ export function About() {
                       </Text>
                     </ModalBody>
                     <ModalFooter>
-                      <Button colorScheme="blue" mr={3} onClick={onClose}>
-                        Close
+                      <Button
+                        rounded="full"
+                        colorScheme="pink"
+                        variant="outline"
+                        mr={3}
+                        onClick={onClose}
+                      >
+                        Fechar
                       </Button>
-                      <Button variant="ghost">Secondary Action</Button>
+                      <Button variant="solid" rounded="full" colorScheme="pink">
+                        <Link
+                          style={{ textDecoration: 'none' }}
+                          href="https://api.whatsapp.com/send?phone=5598981258283&text=Ol%C3%A1%2C%20Dr%C2%AA.%20Mayana!%20Vim%20pelo%20site.%20Podemos%20conversar%3F%20"
+                          isExternal
+                        >
+                          Fale com a Mayana
+                        </Link>
+                      </Button>
                     </ModalFooter>
                   </ModalContent>
                 </Modal>

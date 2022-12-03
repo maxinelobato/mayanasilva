@@ -41,20 +41,22 @@ export function Specialty() {
   return (
     <Box bgColor="#330519">
       <Container maxW={'7xl'}>
-        <Stack
-          as={Box}
-          textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 10, md: 14, lg: 16 }}
-          mt={-10}
-        >
+        <Stack as={Box} textAlign={'center'} spacing={[4, 4, 8]} py={[18, 32, 14]}>
           <Heading
             fontWeight={700}
             fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
             lineHeight={'110%'}
           >
-            Veja como podemos lhe ajudar
+            Veja como posso lhe ajudar
           </Heading>
+          <Text
+            as="h2"
+            color={'whiteAlpha.800'}
+            fontWeight="semibold"
+            fontSize={['lg', '2xl', '3xl']}
+          >
+            Se você não achou o que procura, fale comigo no <i>WhatsApp</i>
+          </Text>
           <SimpleGrid columns={{ base: 1, md: 1 }} spacing={{ base: 1, lg: 6 }}>
             <Box position="relative">
               <Accordion reduceMotion={true} defaultIndex={[0]} allowMultiple>
@@ -75,35 +77,31 @@ export function Specialty() {
                   <AccordionPanel pb={4}>
                     <Box>
                       <Text pt="1" fontSize="sm">
-                        <Icon as={FcCheckmark} /> A ideia é lícita?
+                        <Icon as={FcCheckmark} /> Acompanhamento em Depoimentos
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Existe alguma lei que a define?
+                        <Icon as={FcCheckmark} /> Acompanhamento de Inquéritos Policiais
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Existe alguma lei que a proíbe?
+                        <Icon as={FcCheckmark} /> Apoio para Vítimas e Familiares
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Esse tipo de negócio é regulamentado?
+                        <Icon as={FcCheckmark} /> Levantamento de Provas Favoráveis
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Existe a obrigação de ter alguma
-                        certificação ou registro em algum órgão?
+                        <Icon as={FcCheckmark} /> Prisão em Flagrante
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Consigo desenvolver a regulamentação
-                        junto ao legislativo?
-                      </Text>
-                    </Box>
-                    <Box>
-                      <Heading size="xs" textTransform="capitalize">
-                        serviços:
-                      </Heading>
-                      <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Pesquisa de viabilidade jurídica
+                        <Icon as={FcCheckmark} /> Pedido de Liberdade Com e Sem Fiança
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Viabilidade de construção legislativa
+                        <Icon as={FcCheckmark} /> Preparação para Depoimentos
+                      </Text>
+                      <Text pt="2" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Registro de Boletim de Ocorrência
+                      </Text>
+                      <Text pt="2" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Solicitação de Medidas Protetivas
                       </Text>
                     </Box>
                   </AccordionPanel>
@@ -126,23 +124,15 @@ export function Specialty() {
                   <AccordionPanel pb={4}>
                     <Box>
                       <Text pt="1" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Vai empreender sozinho?
+                        <Icon as={FcCheckmark} /> Atuação em Tribunais Estaduais,
+                        Federais, STJ e STF
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Vai ter sócios?
+                        <Icon as={FcCheckmark} /> Recursos Criminais
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Qual o time ideal para colocar a ideia
-                        em prática?
-                      </Text>
-                    </Box>
-                    <Box>
-                      <Heading size="xs" textTransform="capitalize">
-                        serviços:
-                      </Heading>
-                      <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Elaboração de um MoU (memorando de
-                        entendimentos entre sócios)
+                        <Icon as={FcCheckmark} /> Sustentações Orais Perante os
+                        Tribunais
                       </Text>
                     </Box>
                   </AccordionPanel>
@@ -165,32 +155,37 @@ export function Specialty() {
                   <AccordionPanel pb={4}>
                     <Box>
                       <Text pt="1" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Como contratar desenvolvedores,
-                        programadores, designers e outros prestadores de serviços?
+                        <Icon as={FcCheckmark} /> Audiência de Custódia
                       </Text>
-                    </Box>
-                    <Box>
-                      <Heading size="xs" textTransform="capitalize">
-                        serviços:
-                      </Heading>
-                      <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Contratos com terceiros
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Acompanhamento de Processos
                       </Text>
-                      <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Contratos de vesting
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Atuação em Favor das Vítimas
                       </Text>
-                      <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Formalizar cessão dos direitos
-                        autorais de software
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Defesa dos Acusados
                       </Text>
-                      <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Como falar do projeto para essas e
-                        outras pessoas (como investidores) sem que a ideia seja
-                        divulgada?
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Habeas Corpus
                       </Text>
-                      <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Termos ou cláusulas de
-                        confidencialidade
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Liberdade Provisória
+                      </Text>
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Prisão Domiciliar
+                      </Text>
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Relaxamento de Prisão
+                      </Text>
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Revogação de Prisão
+                      </Text>
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Realização de Audiências
+                      </Text>
+                      <Text pt="1" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Tribunal do Júri
                       </Text>
                     </Box>
                   </AccordionPanel>
@@ -212,18 +207,17 @@ export function Specialty() {
                   </h2>
                   <AccordionPanel pb={4}>
                     <Box>
-                      <Heading size="xs" textTransform="capitalize">
-                        serviços:
-                      </Heading>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Formalizar a empresa (tipo societário
-                        e regime de tributação)
+                        <Icon as={FcCheckmark} /> Livramento Condicional
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Busca prévia INPI
+                        <Icon as={FcCheckmark} /> Progressão de Regime
                       </Text>
                       <Text pt="2" fontSize="sm">
-                        <Icon as={FcCheckmark} /> Registrar marca/patente
+                        <Icon as={FcCheckmark} /> Pedido de Transferência
+                      </Text>
+                      <Text pt="2" fontSize="sm">
+                        <Icon as={FcCheckmark} /> Remição de Pena
                       </Text>
                     </Box>
                   </AccordionPanel>

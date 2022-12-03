@@ -1,6 +1,7 @@
 import { Container, Box, Heading, Text, Stack } from '@chakra-ui/react';
 import { BgImage } from './BgImage';
 import { ButtonCta } from './ButtonCta';
+import { Description } from './Description';
 
 export function Header() {
   return (
@@ -21,7 +22,7 @@ export function Header() {
               <Text
                 as="span"
                 textShadow="#000 1px 1px"
-                m={6}
+                m={3}
                 color="#BF778A"
                 fontWeight="bold"
                 fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
@@ -29,16 +30,18 @@ export function Header() {
                 em <i>Criminal</i>
               </Text>
               <Text
-                as="p"
+                as="h2"
                 color={'whiteAlpha.800'}
                 fontWeight="semibold"
                 fontSize={['lg', '2xl', '3xl']}
               >
-                Receba toda a ajuda jurídica necessária em <i>24 horas</i>
+                Receba toda a ajuda jurídica necessária com <i>Sigilo.</i>
+                <br />
               </Text>
             </Box>
             <ButtonCta />
           </Stack>
+          <Description />
         </Container>
       </Box>
     </BgImage>

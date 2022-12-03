@@ -42,7 +42,7 @@ function StatsCard(props: StatsCardProps) {
       >
         <Box alignContent="center">
           <StatLabel fontWeight={'medium'}>{title}</StatLabel>
-          <StatNumber fontSize={'lg'} fontWeight={'medium'}>
+          <StatNumber fontSize={['sm', 'md', 'lg']} fontWeight={'medium'}>
             {stat}
           </StatNumber>
         </Box>
@@ -58,44 +58,42 @@ function StatsCard(props: StatsCardProps) {
 
 export function Description() {
   return (
-    <Box bgColor="#330519">
-      <Container maxW={'7xl'}>
-        <Stack
-          as={Box}
-          textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 4, md: 14, lg: 10 }}
-          mt={[0, 0, -20]}
-        >
-          <SimpleGrid columns={{ base: 2, md: 5 }} spacing={{ base: 5, lg: 5 }}>
-            <StatsCard
-              title={'Referência no '}
-              stat={'Maranhão'}
-              icon={<BsStars size={'3em'} />}
-            />
-            <StatsCard
-              title={'Atendimento'}
-              stat={'Online/Presencial'}
-              icon={<MdSupportAgent size={'3em'} />}
-            />
-            <StatsCard
-              title={'Compromisso com'}
-              stat={'Seus Direitos'}
-              icon={<FaHandsHelping size={'3em'} />}
-            />
-            <StatsCard
-              title={'Atendimento'}
-              stat={'Personalizado'}
-              icon={<FaHandHoldingHeart size={'3em'} />}
-            />
-            <StatsCard
-              title={'Especialista'}
-              stat={'Criminal'}
-              icon={<GoLaw size={'3em'} />}
-            />
-          </SimpleGrid>
-        </Stack>
-      </Container>
-    </Box>
+    <Container maxW={'5xl'}>
+      <Stack
+        as={Box}
+        textAlign={'center'}
+        spacing={{ base: 8, md: 14 }}
+        py={{ base: 4, md: 14, lg: 0 }}
+        mt={[0, 0, -28]}
+      >
+        <SimpleGrid columns={{ base: 2, md: 5 }} spacing={{ base: 5, lg: 5 }}>
+          <StatsCard
+            title={'Referência no '}
+            stat={'Maranhão'}
+            icon={<BsStars size={'3em'} />}
+          />
+          <StatsCard
+            title={'Atendimento'}
+            stat={'Online/Presencial'}
+            icon={<MdSupportAgent size={'3em'} />}
+          />
+          <StatsCard
+            title={'Compromisso com'}
+            stat={'Seus Direitos'}
+            icon={<FaHandsHelping size={'3em'} />}
+          />
+          <StatsCard
+            title={'Atendimento'}
+            stat={'Personalizado'}
+            icon={<FaHandHoldingHeart size={'3em'} />}
+          />
+          <StatsCard
+            title={'Especialista'}
+            stat={'Criminal'}
+            icon={<GoLaw size={'3em'} />}
+          />
+        </SimpleGrid>
+      </Stack>
+    </Container>
   );
 }

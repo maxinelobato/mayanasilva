@@ -33,13 +33,13 @@ export function Contact() {
             >
               <Button
                 as={Link}
-                shadow="dark-lg"
+                shadow="lg"
                 size="md"
                 height="48px"
                 width="200px"
-                variant="ghost"
+                variant="solid"
                 color="#DCE2FF"
-                _hover={{ bgColor: 'rgba(187, 115, 134, 0.5)' }}
+                _hover={{ bgColor: 'rgba(187, 115, 134, 0.5)', transition: '0.5s' }}
                 leftIcon={<AiFillPhone color="#fff" size="20px" />}
                 href="https://api.whatsapp.com/send?phone=5598981258283&text=Ol%C3%A1%2C%20Dr%C2%AA.%20Mayana!%20Vim%20pelo%20site.%20Podemos%20conversar%3F%20"
                 style={{ textDecoration: 'none' }}
@@ -49,13 +49,13 @@ export function Contact() {
               </Button>
               <Button
                 as={Link}
-                shadow="dark-lg"
+                shadow="lg"
                 size="md"
                 height="48px"
                 width="280px"
-                variant="ghost"
+                variant="solid"
                 color="#DCE2FF"
-                _hover={{ bgColor: 'rgba(187, 115, 134, 0.5)' }}
+                _hover={{ bgColor: 'rgba(187, 115, 134, 0.5)', transition: '0.5s' }}
                 leftIcon={<AiOutlineMail color="#fff" size="20px" />}
                 href="mailto:mayanasilva.adv@gmail.com"
                 style={{ textDecoration: 'none' }}
