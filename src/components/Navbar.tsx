@@ -33,7 +33,7 @@ export function Navbar() {
                 <Button leftIcon={<IoLogoWhatsapp size={22} />}>
                   <Link
                     style={{ textDecoration: 'none' }}
-                    href="https://web.whatsapp.com/send?phone=5513996680686&text=Ol%C3%A1%2C%20Dr.%20Gustavo!%20Vim%20do%20seu%20site.%20Podemos%20conversar%3F"
+                    href="https://api.whatsapp.com/send?phone=5598981258283&text=Ol%C3%A1%2C%20Dr%C2%AA.%20Mayana!%20Vim%20pelo%20site.%20Podemos%20conversar%3F%20"
                     isExternal
                   >
                     (98) 98125-8283
