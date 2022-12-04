@@ -12,6 +12,7 @@
     "@chakra-ui/react": "^2.4.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@fontsource/alex-brush": "^4.5.9",
     "@next/bundle-analyzer": "^13.0.5",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",

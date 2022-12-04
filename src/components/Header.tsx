@@ -2,11 +2,13 @@ import { Container, Box, Heading, Text, Stack } from '@chakra-ui/react';
 import { BgImage } from './BgImage';
 import { ButtonCta } from './ButtonCta';
 import { Description } from './Description';
+import { Navbar } from './Navbar';
 
 export function Header() {
   return (
     <BgImage>
       <Box bgGradient="linear(to-bl, rgba(0, 0, 0, 0.5), rgba(51, 5, 25) 80%)">
+        <Navbar />
         <Container maxW="7xl">
           <Stack as={Box} textAlign={'center'} spacing={[4, 4, 8]} py={[18, 32, 36]}>
             <Box>

@@ -954,6 +954,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/alex-brush@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/alex-brush/-/alex-brush-4.5.9.tgz#5bf444235b9c153ee68c2d10d4597493d1cc0314"
+  integrity sha512-fryXSMmlPn305qLcbnRttrXjHuw+GhyDGHj5aydcmQfpK4IoNyVSuP8bGRhWojO3zjGnIuHfib2CdN03pnJO7Q==
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.7.tgz#38aec044c6c828f6ed51d5d7ae3d9b9faf6dbb0f"
