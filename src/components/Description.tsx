@@ -26,6 +26,7 @@ function StatsCard(props: StatsCardProps) {
 
   return (
     <Stat
+      as="dl"
       px={{ base: 2, md: 4 }}
       py={5}
       backdropFilter="auto"
@@ -41,8 +42,10 @@ function StatsCard(props: StatsCardProps) {
         direction={{ base: 'column-reverse', md: 'column' }}
       >
         <Box alignContent="center">
-          <StatLabel fontWeight={'medium'}>{title}</StatLabel>
-          <StatNumber fontSize={['sm', 'md', 'lg']} fontWeight={'medium'}>
+          <StatLabel fontWeight={'medium'} as="dt">
+            {title}
+          </StatLabel>
+          <StatNumber fontSize={['sm', 'md', 'lg']} fontWeight={'medium'} as="dd">
             {stat}
           </StatNumber>
         </Box>
