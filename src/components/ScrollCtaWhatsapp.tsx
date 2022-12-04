@@ -22,7 +22,6 @@ export function ScrollCtaWhatsapp() {
         borderColor="whiteAlpha.200"
         label="Atendimento 24h"
         placement="top-start"
-        isOpen
       >
         <Link
           style={{ textDecoration: 'none' }}

@@ -10,7 +10,7 @@ const baseStyle = definePartsStyle({
   container: defineStyle({
     boxShadow: 'lg',
     _focus: {
-      boxShadow: 'outline',
+      boxShadow: 'lg',
       rounded: 'lg',
     },
   }),
