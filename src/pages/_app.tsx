@@ -1,4 +1,4 @@
-import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme, Heading, ThemeConfig } from '@chakra-ui/react';
 import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme} resetCSS={true}>
       <Head>
-        <title>Dra. Mayana Silva - Advogada Criminal</title>
+        <Heading as="title">Dra. Mayana Silva - Advogada Criminal</Heading>
       </Head>
       <Analytics />
       <ScrollCtaWhatsapp />
