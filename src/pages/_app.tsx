@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme} resetCSS={true}>
       <Head>
-        <Heading as="title">Dra. Mayana Silva - Advogada Criminal</Heading>
+        <title>Dra. Mayana Silva - Advogada Criminal</title>
       </Head>
       <Analytics />
       <ScrollCtaWhatsapp />
