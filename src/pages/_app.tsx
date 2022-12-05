@@ -19,7 +19,7 @@ const theme = extendTheme({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme} resetCSS>
+    <ChakraProvider theme={theme} resetCSS={true}>
       <Head>
         <title>Dra. Mayana Silva - Advogada Criminal</title>
       </Head>
