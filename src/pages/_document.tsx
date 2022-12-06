@@ -10,6 +10,7 @@ export default class Document extends NextDocument {
           <meta property="type" content="website" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preload" href="/img/bgImage.webp" as="image" />
+          <link rel="preload" href="/img/may.webp" as="image" />
         </Head>
         <body>
           {/* 👇 Here's the script */}
