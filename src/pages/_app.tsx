@@ -1,6 +1,5 @@
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 import { Analytics } from '@vercel/analytics/react';
-import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { accordionTheme } from '../components/Accordion';
 import { ScrollCtaWhatsapp } from '../components/ScrollCtaWhatsapp';
@@ -20,9 +19,6 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme} resetCSS={true}>
-      <Head>
-        <title>Dra. Mayana Silva - Advogada Criminal</title>
-      </Head>
       <Analytics />
       <ScrollCtaWhatsapp />
       <Component {...pageProps} />

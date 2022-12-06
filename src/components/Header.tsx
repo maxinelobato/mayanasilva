@@ -15,7 +15,7 @@ export function Header() {
               <Heading
                 as="h1"
                 fontWeight="bold"
-                fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+                fontSize={{ base: '4xl', sm: '5xl', md: '6xl' }}
                 lineHeight="110%"
                 color="whiteAlpha.800"
               >
@@ -27,17 +27,18 @@ export function Header() {
                 m={3}
                 color="#BF778A"
                 fontWeight="bold"
-                fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+                fontSize={{ base: '4xl', sm: '5xl', md: '6xl' }}
               >
                 em <i>Criminal</i>
               </Text>
               <Text
                 as="h2"
                 color={'whiteAlpha.800'}
-                fontWeight="semibold"
+                fontWeight="normal"
                 fontSize={['lg', '2xl', '3xl']}
               >
-                Receba toda a ajuda jurídica necessária com <i>Sigilo.</i>
+                Receba toda a ajuda jurídica necessária com <strong>Sigilo</strong> e{' '}
+                <strong>Atendimento 24h.</strong>
                 <br />
               </Text>
             </Box>

@@ -4,18 +4,15 @@ export default class Document extends NextDocument {
     return (
       <Html lang="pt-BR">
         <Head>
-          <meta property="og:title" content="Dra. Mayana Silva - Advogada Criminal" />
+          <meta property="title" content="Dra. Mayana Silva - Advogada Criminal" />
           <meta name="description" content="Dra. Mayana Silva - Advogada Criminal" />
-          <meta
-            property="og:description"
-            content="Dra. Mayana Silva - Advogada Criminal"
-          />
-          <meta property="og:url" content="https://lp-nextsjs.vercel.app/" />
-          <meta property="og:type" content="website" />
+          <meta property="url" content="https://lp-nextsjs.vercel.app/" />
+          <meta property="type" content="website" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           {/* 👇 Here's the script */}
+          <title>Dra. Mayana Silva - Advogada Criminal</title>
           <Main />
           <NextScript />
         </body>
