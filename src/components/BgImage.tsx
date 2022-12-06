@@ -7,7 +7,7 @@ export function BgImage(props: BoxProps) {
       maxH="auto"
       bgImage="/img/bgImage.webp"
       bgSize="cover"
-      bgPosition={'center center'}
+      bgPosition="center center"
       {...props}
     />
   );
