@@ -20,12 +20,12 @@ export function Navbar() {
           <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
             <Flex flex={{ base: 1 }} justify={['center', 'center', 'left']}>
               <Text
+                as="h3"
                 textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-                fontFamily="Alex Brush"
-                fontSize={['2xl', '3xl', '4xl']}
+                fontSize={['sm', 'lg', '2xl']}
                 color={useColorModeValue('gray.800', 'white')}
               >
-                Mayana Silva
+                MS Advocacia & Assessoria Jurídica
               </Text>
             </Flex>
             <Flex alignItems={'center'}>

@@ -1,8 +1,8 @@
 import { Container, Box, Heading, Text, Stack } from '@chakra-ui/react';
-import { BgImage } from './BgImage';
 import { ButtonCta } from './ButtonCta';
 import { Description } from './Description';
 import { Navbar } from './Navbar';
+import { BgImage } from './BgImage';
 
 export function Header() {
   return (
@@ -31,16 +31,16 @@ export function Header() {
               >
                 em <i>Criminal</i>
               </Text>
-              <Text
+              <Heading
                 as="h2"
                 color={'whiteAlpha.800'}
                 fontWeight="normal"
-                fontSize={['lg', '2xl', '3xl']}
+                fontSize={['lg', '2xl', '2xl']}
               >
                 Receba toda a ajuda jurídica necessária com <strong>Sigilo</strong> e{' '}
                 <strong>Atendimento 24h.</strong>
                 <br />
-              </Text>
+              </Heading>
             </Box>
             <ButtonCta />
           </Stack>

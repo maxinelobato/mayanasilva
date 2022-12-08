@@ -1,8 +1,8 @@
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 import { Analytics } from '@vercel/analytics/react';
-import type { AppProps } from 'next/app';
 import { accordionTheme } from '../components/Accordion';
 import { ScrollCtaWhatsapp } from '../components/ScrollCtaWhatsapp';
+import type { AppProps, NextWebVitalsMetric } from 'next/app';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
@@ -24,6 +24,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </ChakraProvider>
   );
+}
+
+export function reportWebVitals(metric: NextWebVitalsMetric) {
+  console.log(metric);
 }
 
 export default MyApp;
