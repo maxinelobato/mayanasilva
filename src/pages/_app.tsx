@@ -1,5 +1,4 @@
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
-import { Analytics } from '@vercel/analytics/react';
 import { accordionTheme } from '../components/Accordion';
 import { ScrollCtaWhatsapp } from '../components/ScrollCtaWhatsapp';
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
@@ -19,7 +18,6 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme} resetCSS={true}>
-      <Analytics />
       <ScrollCtaWhatsapp />
       <Component {...pageProps} />
     </ChakraProvider>
